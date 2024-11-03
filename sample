@@ -1,0 +1,1 @@
+= MySQL.Database("localhost", "project", [ReturnSingleDatabase=true, Query="SELECT #(lf)    'Square Metres' AS Store,#(lf)    SUM(`Quantity` * `Unit Price USD`) AS total_sales,#(lf)    COUNT(DISTINCT `Order Number`) AS total_orders#(lf)FROM #(lf)    data_spark#(lf)WHERE #(lf)    `StoreKey` = 0;#(lf)"])
